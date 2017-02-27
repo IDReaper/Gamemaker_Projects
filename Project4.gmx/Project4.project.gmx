@@ -10,6 +10,8 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_camera</sprite>
+    <sprite>sprites\spr_shield</sprite>
+    <sprite>sprites\spr_node</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,13 +19,17 @@
     <script>scripts\playerMov.gml</script>
     <script>scripts\platformInit.gml</script>
     <script>scripts\dynamCamera.gml</script>
+    <script>scripts\dynamShield.gml</script>
     <script>scripts\enemyScript.gml</script>
+    <script>scripts\bulletScript.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_camera</object>
+    <object>objects\obj_shield</object>
+    <object>objects\obj_node</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testroom</room>
