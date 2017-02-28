@@ -18,7 +18,9 @@
     <sprite>sprites\spr_node</sprite>
     <sprite>sprites\sprite7</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\playerMov.gml</script>

@@ -33,18 +33,21 @@ if (place_meeting(x+hsp,y,obj_wall))
     }
     else
     {
-        y -= yplus
+        y -= yplus;
     }
-}
-/*
-if !place_meeting(x,y,obj_wall) && vsp >= 0 && place_meeting(x,y+2+abs(hsp),obj_wall)
+}else
 {
-    while(!place_meeting(x,y+1,obj_wall)) 
-    {
-        y += 1;
-    }
+    yplus = 4;
+    while(place_meeting(x+hsp,y+yplus,obj_wall)) && (yplus >0) yplus -=1;
+    if (!place_meeting(x+hsp,y+yplus,obj_wall))
+        {
+        if (place_meeting(x+hsp,y+yplus+1,obj_wall))
+            {
+            y+=yplus;
+            }
+        }
 }
-*/
+
 //temp enemy collision
 if (place_meeting(x+hsp,y,obj_enemy))
 {
