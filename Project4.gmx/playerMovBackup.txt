@@ -24,27 +24,13 @@ if (vsp < 0) && (!key_jump_held) vsp += grav / 0.2;
 
 if (place_meeting(x+hsp,y,obj_wall))
 {
-    yplus = 0;
-    while (place_meeting(x+hsp,y-yplus,obj_wall) && yplus <= abs(1*hsp)) yplus += 1;
-    if place_meeting(x+hsp,y-yplus,obj_wall)
+    while(!place_meeting(x+sign(hsp),y,obj_wall))
     {
-        while (!place_meeting(x+sign(hsp),y,obj_wall)) x+=sign(hsp);
-        hsp = 0;
+        x += sign(hsp);
     }
-    else
-    {
-        y -= yplus
-    }
+    hsp = 0;
 }
-/*
-if !place_meeting(x,y,obj_wall) && vsp >= 0 && place_meeting(x,y+2+abs(hsp),obj_wall)
-{
-    while(!place_meeting(x,y+1,obj_wall)) 
-    {
-        y += 1;
-    }
-}
-*/
+
 //temp enemy collision
 if (place_meeting(x+hsp,y,obj_enemy))
 {

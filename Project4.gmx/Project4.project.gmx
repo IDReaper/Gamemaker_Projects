@@ -11,10 +11,12 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_player_run</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_slope_45</sprite>
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_camera</sprite>
     <sprite>sprites\spr_shield</sprite>
     <sprite>sprites\spr_node</sprite>
+    <sprite>sprites\sprite7</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -36,6 +38,7 @@
     <object>objects\obj_node</object>
     <object>objects\obj_shield_controller</object>
     <object>objects\music_controller</object>
+    <object>objects\obj_sloper_45</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testroom</room>
