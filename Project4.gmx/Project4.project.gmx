@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\backgroundmusic1</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_player_run</sprite>
@@ -33,6 +35,7 @@
     <object>objects\obj_shield</object>
     <object>objects\obj_node</object>
     <object>objects\obj_shield_controller</object>
+    <object>objects\music_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testroom</room>
