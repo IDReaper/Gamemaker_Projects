@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_player_run</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_camera</sprite>
@@ -22,6 +23,7 @@
     <script>scripts\dynamShield.gml</script>
     <script>scripts\enemyScript.gml</script>
     <script>scripts\bulletScript.gml</script>
+    <script>scripts\shield_controller.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -30,6 +32,7 @@
     <object>objects\obj_camera</object>
     <object>objects\obj_shield</object>
     <object>objects\obj_node</object>
+    <object>objects\obj_shield_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testroom</room>

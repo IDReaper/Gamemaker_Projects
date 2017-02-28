@@ -7,7 +7,10 @@ move = key_left + key_right;
 hsp = move * movespeed
 
 if (move != 0){
+    sprite_index = spr_player_run;
     image_xscale = move;
+}else{
+    sprite_index = spr_player;
 }
 
 if (vsp < 10) vsp += grav;
